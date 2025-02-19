@@ -4,7 +4,6 @@ function somar(){
      
     var res = document.getElementById("res1")
     res.innerHTML = numero1 + numero2
-    return res;
 }
 function subtrair(){
     var numero1 = parseFloat(document.getElementById("n3").value)
@@ -12,7 +11,7 @@ function subtrair(){
      
     var res = document.getElementById("res2")
     res.innerHTML = numero1 - numero2
-    return res;}
+    }
 
     function mult(){
     var numero1 = parseFloat(document.getElementById("n5").value)
@@ -20,12 +19,19 @@ function subtrair(){
      
     var res = document.getElementById("res3")
     res.innerHTML = numero1 * numero2
-    return res;}
+    }
 
     function dividir(){
     var numero1 = parseFloat(document.getElementById("n7").value)
     var numero2 = parseFloat(document.getElementById("n8").value)
      
     var res = document.getElementById("res4")
-    res.innerHTML = numero1 / numero2
-    return res;}
+    if(numero2 !== 0){
+        res.innerHTML = (numero1 / numero2).toFixed(1)
+    }else{
+        res.innerHTML = "ERRO"
+    }
+    
+    }
+
+    
