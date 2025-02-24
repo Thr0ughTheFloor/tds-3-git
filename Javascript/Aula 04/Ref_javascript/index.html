@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="corpo">
+    <script src="script.js"></script>
+    <h1>Contas Matemáticas</h1>
+    <main>
+        <section id="s1">
+            <h2> Função de Soma</h2>
+            <label class="l1" for="n1">Primeiro numero: </label>
+            <input type="text" id="n1" placeholder="Digite">
+            <label for="n2">Segundo numero: </label>
+            <input type="text" id="n2" placeholder="">
+            <button onclick="calcular('n1','n2','res1','+')">somar</button><br>
+            <p>Resultado: <span id="res1"></span></p>
+        </section>
+        <section id="s1">
+            <h2>Função de Subtração</h2>
+            <label for="n3">Primeiro numero: </label>
+            <input type="text" id="n3" placeholder="Digite">
+            <label for="n4">Segundo numero: </label>
+            <input type="text" id="n4" placeholder="">
+            <button onclick="calcular('n3','n4','res2','-')">subtrair</button><br>
+            <p>Resultado: <span id="res2"></span></p>
+        </section>
+        <section id="s1">
+            <h2>Função de Multiplicação</h2>
+            <label for="n5">Primeiro numero: </label>
+            <input type="text" id="n5" placeholder="Digite">
+            <label for="n6">Segundo numero: </label>
+            <input type="text" id="n6" placeholder="">
+            <button onclick="calcular('n5','n6','res3','x')">multiplicar</button><br>
+            <p>Resultado: <span id="res3"></span></p>
+        </section>
+        <section id="s1">
+            <h2>Função de Divisão</h2>
+            <label for="n7">Primeiro numero: </label>
+            <input type="text" id="n7" placeholder="Digite">
+            <label for="n8">Segundo numero: </label>
+            <input type="text" id="n8" placeholder="">
+            <button onclick="calcular('n7','n8','res4','/')">dividir</button><br>
+            <p>Resultado: <span id="res4"></span></p>
+        </section>
+    </main>
+</body>
+</html>

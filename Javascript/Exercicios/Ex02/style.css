@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#banner{
+    min-height: 100px;
+    height: auto;
+    box-shadow: 25px;
+}
+
+#img-boat{
+    margin-top: -500px;
+    width: 100%;
+    height: 900px;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: silver;
+}

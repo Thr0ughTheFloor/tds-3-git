@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.img-logo{
+    width:50px;
+    height: auto;
+}
+
+section{
+    height: 100vh;
+}
+
+
+#s1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    background: url(assets/birdies-art.png);
+    background-size: 300%;
+    background-color: red;
+}
+
+.s1-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+.s1-right{
+    width: 600px;
+    mix-blend-mode: exclusion;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, bold;
+    border: invert; 
+}
+
+.s1-back-img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.wrap-img{
+    width: 400px;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img-s1{
+    width: 400px;
+    height: 400px;
+    background: white;
+    filter: grayscale(1);
+    transition: all 450ms ease-in-out;
+}
+.img-s1:hover{
+    filter: grayscale(0);
+    background: rgb(red, green, blue);
+    transform: scale(1.2);
+}
+
+.title-name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+
+#s2{
+    background-image: url("") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    background: url(assets/demon.png);
+    background-color: red;
+    image-rendering: pixelated;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cartao{
+    background-color: #020202a9;
+    width: 16rem;
+    height:450px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-img-card{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    min-height: 100px;
+    max-height: 100px;
+  
+}
+
+.wrap-info-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.wrap-info-card h3{
+  max-height:50px ;
+  min-height: 50px;
+}
+
+#s3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#s4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding:2vh 0px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formulario button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 999px;
+    border: none;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    transition: all 200ms ease-in-out;
+}
+
+.formulario button:hover{
+    color: black;
+    border: 1px solid black;
+    background: white;
+ }
+
+.formulario input{
+    padding: 10px;
+    border: none;
+}
+
+#assunto{
+    padding: 10px;
+    width: 80%;
+}
+
+
+@media (width < 1000px){
+    #s1{
+       padding: 80px 20px 0px 20px;
+       gap: 0;
+    }
+    .wrap-img{
+        mix-blend-mode: lighten;
+        width: 300px;
+    }
+    .img-s1{
+        width: 300px;
+        height: 300px;
+    }
+    #s2{
+        padding: 10vh 0px;
+        height: auto;
+        background-image: url("./assets/demon.png") ;
+    }
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    min-height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 10vh;
+}
