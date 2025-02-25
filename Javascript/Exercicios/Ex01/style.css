@@ -5,29 +5,77 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    min-height: 100px;
-    height: auto;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    place-items: center; 
+
 }
+
+
 h1{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10vh;
+    margin-bottom: 80px;
 }
 
+
 #login-1{
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 20px;
-    width: 300px;
+    display: flex;
+    padding: 30px;
+    min-height: 180px;
+    height: 100%;
     flex-direction: column;
-    gap: 2vh;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10vh;
+    margin-top: 10px;
+    border: 2px solid ;
+    width: 250px;
+    border-radius: 20px;
+    gap: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    
+}
+
+
+p{
+    display: flex;
+    padding: 20px;
+    color: black;
+    align-self: center;
+    
+
+}
+
+
+label{
+    color: black;
+    text-align: left;
+    padding: 5px;
+}
+
+input{
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.2), 0 2px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+button{
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    background: white;
+    color: black;
+    align-self: center;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 500ms;
+}
+
+button:hover{
+    background: black;
+    color: white;
+    box-shadow: 0 8px 5px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
