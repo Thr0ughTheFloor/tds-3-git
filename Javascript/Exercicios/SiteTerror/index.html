@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="./assets/ambience-tensao.mp3" type="audio/mpeg"> 
+ </audio>
+ 
+    <nav>
+        <div id="width-nav">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#footer">Contact</a>
+            </div>
+            <button id="side-button" onclick="openNav()">Dyatlov Incident</button>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <img src="./assets/copies-of-russian-passports-doesnt-look-good-4.jpg" alt="">
+        <h2>O incidente de Dyatlov</h2>
+        <p>O Incidente do Passo Dyatlov foi um incidente misterioso que ocorreu nos Montes Urais, na antiga União Soviética, 
+          entre 1 e 2 de fevereiro de 1959. Nove caminhantes russos, todos escaladores e esquiadores experientes do Instituto 
+          Politécnico dos Urais, morreram de causas desconhecidas durante uma expedição de inverno. A tragédia ocorreu perto da 
+          montanha Kholat Syakhl, que significa “Montanha da Morte” na língua indígena Mansi, e tem havido muita especulação sobre 
+          o que pode ter acontecido naquela noite.
+          </p>
+    </section>
+
+    <section class="s1">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button> <!-- Novo botão -->
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="./assets/card-1.jpg" class="d-block w-100" alt="Rio Auspya">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5 style="color: red;">montes Urais</h5>
+                      <p style="color: red;">Antiga União Soviética</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="./assets/card-2.jpg" class="d-block w-100" alt="Esquiadores na Neve">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5 style="color: red;">Second slide label</h5>
+                      <p style="color: red;">Some representative placeholder content for the second slide.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="./assets/card-3.jpg" class="d-block w-100" alt="Após o Incidente">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5 style="color: red;">Third slide label</h5>
+                      <p style="color: red;">Some representative placeholder content for the third slide.</p>
+                  </div>
+              </div>
+              <div class="carousel-item"> <!-- Novo slide -->
+                  <img src="./assets/card-4.jpg" class="d-block w-100" alt="Nova Imagem">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5>Fourth slide label</h5>
+                      <p>Some representative placeholder content for the fourth slide.</p>
+                  </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </section>
+  
+
+  <section class="s1-2">
+    <div> <h2>Expedição e seus participantes</h2></div>
+    <div>
+      <img src="assets/esquiadores.jpeg" alt="">
+    </div>
+    <div>
+      <p>O grupo é liderado pelo estudante de engenharia Igor Dyatlov, de 23 anos. Outros membros são:<br>
+
+        Yuri Doroshenko (21 anos) <br>
+        Lyudmila Dubinina (20 anos) <br>
+        Georgy Krivonishenko (23 anos) <br>
+        Alexander Kolevatov (24 anos) <br>
+        Zinaida Kolmogorova (22 anos) <br>
+        Rustem Slobodin (23 anos) <br>
+        Nicolas Thibaut-Brignole (23 anos) <br>
+        Semyon Zolotarev (37 anos) <br><br>    
+        Yuri Yudin (21) é o único sobrevivente que abandonou a expedição por problemas de saúde antes do incidente.
+        O objetivo da expedição era caminhar aproximadamente 350 quilômetros até o Monte Otorten. A viagem foi cuidadosamente 
+        planejada e começou no final de janeiro de 1959, segundo registros do grupo.</p>
+    </div>
+  </section>
+    
+    <section class="s2">
+        <div class="cartao" id="cartao1">
+            <div class="envelopar-texto">
+              <h3>Acampamento</h3>
+              <p>A tenda foi encontrada intacta, mas o interior foi aberto.
+                Havia pertences como sapatos e roupas na tenda, indicando que os integrantes saíram com pressa.
+                Pegadas indicam que o grupo saiu do acampamento descalço ou de meias, apesar do clima extremamente frio (-30°C a -40°C).
+              </p>
+            </div>
+          </div>
+
+          <div class="cartao" id="cartao2">
+            <div class="envelopar-texto">
+              <h3>Cadáveres</h3>
+              <p>Doroshenko e Krivonishenko foram encontrados perto de um incêndio, vestindo apenas roupas íntimas.
+                Dyatlov, Kolmogorova e Slobotin foram espalhados entre o fogo e o acampamento, indicando que estavam tentando retornar.
+                Dois meses depois, os últimos quatro corpos foram encontrados no desfiladeiro coberto de neve. Eles ficaram gravemente feridos
+              </p>
+            </div>
+          </div>
+
+          <div class="cartao" id="cartao3">
+            <div class="envelopar-texto">
+              <h3>Cadáveres</h3>
+              <p>Thibault Brignolle sofreu uma grave fratura no crânio.
+                Dubinina e Zolotarev sofreram múltiplas fraturas de costelas e hemorragia interna.
+                Dubinina perdeu a língua e parte do olho.
+                Embora os ferimentos fossem graves, nenhum trauma óbvio foi encontrado e os investigadores compararam as forças envolvidas com as de um acidente de carro.
+              </p>
+            </div>
+          </div>
+
+          <div class="cartao" id="cartao4">
+            <div class="envelopar-texto">
+              <h3>Inspeção</h3>
+              <p>Traços de radiação foram encontrados em algumas roupas.
+                A pele de alguns cadáveres ficou preta e seus cabelos ficaram brancos.
+                Testemunhas disseram que houve um estranho clarão laranja no céu no momento do incidente.
+              </p>
+            </div>
+          </div>
+    </section>
+
+    <footer class="footer">
+        <a target="_blank" href="https://mail.google.com/"><img width="30px" height="auto" src="./assets/icone-gmail.png" alt="Gmail"></a>
+        <a target="_blank" href="https://www.youtube.com/"><img width="30px" height="auto" src="./assets/icone-youtube.png" alt="Youtube"></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+:root{
+    --black: #000000;
+    --wine-red: #9f111b;
+    --red: #b11623;
+    --dark-blue: #292c37;
+    --gray: #cccccc;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+ /* background-image: url("img_tree.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll; */
+    background-image: url(./assets/background.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    backdrop-filter: invert(75%);
+}
+
+#width-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    background-color: var(--black);
+    color: var(--gray);
+}
+
+#side-button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    height: 43px;
+    width: auto;
+    border-radius: 999px;
+    background-color: var(--black);
+    color: var(--gray);
+    filter: blur(2px);
+    transition: all 300ms ease-in-out;
+}
+
+#side-button:hover{
+  filter: blur(0px);
+  background: rgb(177,22,35);
+  background: radial-gradient(circle, rgba(177,22,35,1) 35%, rgba(159,17,27,1) 55%, rgba(0,0,0,1) 100%);
+  letter-spacing: 2px;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: var(--dark-blue);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--gray);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: var(--red);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .carousel{
+    width: 800px;
+    height: 600px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+
+  .carousel-item img{
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+    border-radius: 15px;
+  }
+
+  .carousel-item img:active{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    cursor: zoom-out;
+  }
+
+
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--black);
+    min-height: 80px;
+    box-shadow: var(--dark-blue) 0px 5px 15px;
+    margin-top: auto;
+ }
+
+ footer a:hover{
+    transform: scale(1.2);
+ }
+  
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

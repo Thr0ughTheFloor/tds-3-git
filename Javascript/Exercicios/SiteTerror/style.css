@@ -1,0 +1,285 @@
+:root{
+    --black: #000000;
+    --wine-red: #9f111b;
+    --red: #b11623;
+    --dark-blue: #292c37;
+    --gray: #cccccc;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--dark-blue) !important;
+    background: url(assets/demon.png);
+}
+
+#width-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 80px;
+    height: auto;
+    background-color: var(--black);
+    color: var(--gray);
+}
+
+#side-button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    height: 43px;
+    width: auto;
+    border-radius: 999px;
+    background-color: var(--black);
+    color: var(--gray);
+    filter: blur(2px);
+    transition: all 300ms ease-in-out;
+}
+
+#side-button:hover{
+  filter: blur(0px);
+  background: rgb(177,22,35);
+  background: radial-gradient(circle, rgba(177,22,35,1) 35%, rgba(159,17,27,1) 55%, rgba(0,0,0,1) 100%);
+  letter-spacing: 2px;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: var(--wine-red);
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--black);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: var(--gray);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .banner{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .banner img {
+    position: absolute;
+    filter: blur(0px);
+    height: 93vh;
+    min-width: 200vh;
+    width: auto;
+    transition: all 300ms ease-in-out;
+    user-select: none;
+  }
+
+  .banner h2{
+    position: absolute;
+    color: white;
+    mix-blend-mode: difference;
+    font-size: 32px;
+    justify-content: center;
+    top: 125px;
+    transition: all 350ms ease-in-out;
+    filter: blur(2px);
+    letter-spacing: 5px;
+  }
+
+  .banner p{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    top: 255px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 300ms ease-in-out;
+    filter: blur(2px);
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .banner:hover img {
+    filter: blur(15px);
+    transform: scale(1.05);
+  }
+
+  .banner:hover h2 {
+    filter: blur(0px);
+    transform: scale(1.05);
+    letter-spacing: 15px;
+  }
+
+  .banner:hover p{
+    filter: blur(0px);
+    transform: translateX(-50%) scale(1.05);
+    color: red;
+
+  }
+
+  .carousel{
+    width: 800px;
+    height: 600px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+
+  .carousel-item img{
+    transition: transform 0.5s ease;
+    cursor: zoom-in;
+    border-radius: 15px;
+    filter: blur(2px);
+    transition: all 300ms ease-in-out;
+  }
+
+  .carousel-item img:hover{
+    filter: blur(0px);
+  }
+
+  .carousel-item img:active{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    cursor: zoom-out;
+  }
+
+  .s1-2 {
+    color: red; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    gap: 20px;
+    min-height: 80vh;
+    height: auto;
+    margin-bottom: 5vh;
+    font-size: 1.2rem; 
+    line-height: 1.6;
+}
+
+.s1-2 img {
+    width: 100%; 
+    height: auto; 
+    max-height: 80vh; 
+    object-fit: cover;
+}
+
+
+  .s2{
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    min-height: 80vh;
+    height: auto;
+    margin-bottom: 5vh;
+  }
+
+  .cartao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--red);
+    width: 42vh;
+    height: 50vh;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-top: 5vh;
+    gap: 3vh;
+    filter: blur(5px);
+    transition: all 300ms ease-in-out;
+}
+
+.cartao:hover{
+    background-color: var(--gray);
+    color: var(--wine-red);
+    filter: blur(0px);
+}
+
+#cartao1{
+  background: url(assets/posIncidente.jpg);
+  background-position: -30vh;
+}
+#cartao2{
+  background: url(assets/yeti.jpg);
+}
+#cartao3{
+  background: url(assets/corpo-4.jpeg);
+  background-repeat: no-repeat;
+  background-size: 50vh;
+}
+#cartao4{
+  background: url(assets/corpos-2.jpg);
+}
+
+
+.envelopar-texto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.envelopar-texto h3 {
+  padding: 10%;
+}
+
+
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--black);
+    min-height: 80px;
+    box-shadow: var(--dark-blue) 0px 5px 15px;
+    margin-top: auto;
+ }
+
+ footer a:hover{
+    transform: scale(1.2);
+ }
+  
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  
