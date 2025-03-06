@@ -1,13 +1,16 @@
-/* Set the width of the side navigation to 250px */
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
   
-  /* Set the width of the side navigation to 0 */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+  
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
-  // function (){
+function mousefx(){
+  var fileUrl =  "http://127.0.0.1:5500/Javascript/Exercicios/SiteTerror/index.html" + "assets/somMouse.mp3";
+  var audio = new Audio(fileUrl);
+  audio.play();
+}
 
-  // }
+window.addEventListener('click', mousefx, false);
