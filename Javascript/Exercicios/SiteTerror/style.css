@@ -234,7 +234,7 @@ body{
 
 .cartao:hover{
     background-color: var(--gray);
-    color: var(--wine-red);
+    color: var(--red);
     filter: blur(0px);
 }
 
